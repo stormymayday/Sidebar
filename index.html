@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Default Starter</title>
+    <title>Sidebar</title>
     <!-- normalize css -->
     <link rel="stylesheet" href="./normalize.css">
     <!-- font-awesome -->
@@ -15,82 +15,84 @@
 </head>
 
 <body>
-    <h1>hello world</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt veritatis ut obcaecati facilis iure
-        placeat consectetur cupiditate amet corrupti!</p>
+    <!-- toggle button start -->
+    <button type="button" class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!-- toggle button end -->
 
-    <h2>hello world</h2>
+    <!-- sidebar start -->
+    <aside class="sidebar">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt veritatis ut obcaecati facilis iure
-        placeat consectetur cupiditate amet corrupti!</p>
+        <!-- sidebar-header start -->
+        <div class="sidebar-header">
 
-    <h1>hello world</h1>
-    <h2>hello world</h2>
-    <h3>hello world</h3>
-    <h4>hello world</h4>
-    <h5>hello world</h5>
+            <!-- logo start -->
+            <h4 class="logo">Your <span> Logo</span></h4>
+            <!-- logo end -->
 
-    <a href="#">link example</a>
+            <!-- close button start -->
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- close button end -->
 
-    <ul>
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-    </ul>
-
-    <button class="btn" type="button">regular buttom</button>
-    <button class="btn btn-hipster" type="button">hipster buttom</button>
-
-    <br />
-    <br />
-
-    <div class="alert alert-danger">hello from danger</div>
-    <div class="alert alert-success">hello from success</div>
-
-    <!-- form start -->
-    <form class="form">
-
-        <h4>contact form</h4>
-
-        <div class="form-row">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" placeholder="hello there" id="name" class="form-input">
         </div>
+        <!-- sidebar-header end -->
 
-        <div class="form-row">
-            <label for="number" class="form-label">Number</label>
-            <input type="number" id="number" class="form-input">
-        </div>
+        <!-- links start -->
+        <ul class="links">
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="about.html">abount</a>
+            </li>
+            <li>
+                <a href="projects.html">projects</a>
+            </li>
+            <li>
+                <a href="contact.html">contact</a>
+            </li>
+        </ul>
+        <!-- links end -->
 
-        <div class="form-row">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-input">
-            <small class="form-alert">please provide a value</small>
-        </div>
+        <!-- social icons start -->
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.behance.net" target="_blank">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.sketch.com" target="_blank">
+                    <i class="fab fa-sketch"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- social icons end -->
 
-        <div class="form-row">
-            <label for="textarea" class="form-label">Textarea</label>
-            <textarea class="form-textarea">Default Value</textarea>
-        </div>
+    </aside>
+    <!-- sidebar end -->
 
-        <button type="s
-        " class="btn btn-block">Submit</button>
-
-    </form>
-    <!-- form end -->
-
-    <!-- loading animation start -->
-    <div class="loading"></div>
-    <!-- loading animation end -->
-
-    <!-- title start -->
-    <div class="title">
-        <h2>section title</h2>
-        <div class="title-underline"></div>
-    </div>
-    <!-- title end -->
-
+    <!-- JavaScript -->
+    <script src="app.js"></script>
 </body>
 
 </html>
