@@ -329,7 +329,9 @@ Sidebar
     transform: translateX(-100%);
 }
 
-/* todo show sidebar */
+.show-sidebar {
+    transform: translateX(0);
+}
 
 @media screen and (min-width: 676px) {
 
